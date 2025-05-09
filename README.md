@@ -1,7 +1,6 @@
-M-Pesa Prompt Integration
-
-
-This repository contains a Django-based application that integrates with the M-Pesa API to initiate payment prompts. It demonstrates how to send payment requests to users via M-Pesa's STK Push service.
+M-Pesa Prompt Integration<br>
+This repository contains a Django-based application that integrates with the M-Pesa API to initiate payment prompts.
+It demonstrates how to send payment requests to users via M-Pesa's STK Push service.<br>
 
 Features
 STK Push Integration: Initiates payment prompts to users' mobile devices using M-Pesa's STK Push API.
