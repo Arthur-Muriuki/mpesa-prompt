@@ -1,62 +1,82 @@
-M-Pesa Prompt Integration<br>
-This repository contains a Django-based application that integrates with the M-Pesa API to initiate payment prompts.
-It demonstrates how to send payment requests to users via M-Pesa's STK Push service.<br>
+# 💸 M-Pesa Prompt Integration
 
-Features
-STK Push Integration: Initiates payment prompts to users' mobile devices using M-Pesa's STK Push API.
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Built with Django](https://img.shields.io/badge/Django-Framework-092E20?logo=django)
+![Database: SQLite](https://img.shields.io/badge/Database-SQLite-blue)
 
-Django Framework: Utilizes Django for rapid web development and clean design.
+This repository contains a Django-based web application that integrates with the **M-Pesa API** to initiate payment prompts via **STK Push**.
 
-SQLite Database: Stores transaction records using a lightweight SQLite database.
+---
 
-Project Structure
-mpesademo/: Contains the main Django project settings and configurations.
+## 🚀 Features
 
-myapp/: Django application handling the core logic for M-Pesa integration.
+- **📲 STK Push Integration** – Sends payment prompts directly to users' mobile devices via M-Pesa.
+- **🧱 Django Framework** – Rapid backend development with a clean structure.
+- **🗃 SQLite Database** – Lightweight local database for transactions.
 
-db.sqlite3: SQLite database file storing transaction data.
+---
 
-manage.py: Django's command-line utility for administrative tasks.
+## 🗂️ Project Structure
 
-.env: Environment variables file (ensure this file is excluded from version control for security).
+mpesa-prompt/
+│
+├── mpesademo/ # Django project configuration
+├── myapp/ # Core logic for M-Pesa integration
+├── db.sqlite3 # SQLite database
+├── manage.py # Django management utility
+├── .env # Environment variables (not tracked in Git)
+└── requirements.txt # Python dependencies
 
-Technologies Used
-Python: Programming language used for development.
+---
 
-Django: High-level Python web framework.
+## ⚙️ Technologies Used
 
-SQLite: Lightweight database for development and testing.
+- **Python** – Backend language
+- **Django** – Web framework
+- **SQLite** – Development database
 
-Getting Started
-Prerequisites
-Python 3.x installed on your machine.
+---
 
-Virtual environment tool (optional but recommended).
+## 🧪 Getting Started
 
-Installation
-Clone the repository:
+### ✅ Prerequisites
 
-bash
-Copy
-Edit
+- Python 3.x installed
+- Optional: Virtual environment tool
+
+---
+
+### 🔧 Installation
+
+1. **Clone the Repository**
+
+```bash
 git clone https://github.com/Arthur-Muriuki/mpesa-prompt.git
 cd mpesa-prompt
-Create and activate a virtual environment (optional):
+```
+Create and Activate a Virtual Environment (Optional)
 
+macOS/Linux:
 bash
 Copy
 Edit
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
+source venv/bin/activate
+Windows:
+bash
+Copy
+Edit
+python -m venv venv
+venv\Scripts\activate
+Install Dependencies
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Configure environment variables:
+Configure Environment Variables
 
-Create a .env file in the root directory and add the necessary M-Pesa API credentials:
+Create a .env file in the root directory and add:
 
 env
 Copy
@@ -65,28 +85,64 @@ CONSUMER_KEY=your_consumer_key
 CONSUMER_SECRET=your_consumer_secret
 SHORTCODE=your_shortcode
 PASSKEY=your_passkey
-Apply migrations:
+Apply Migrations
 
 bash
 Copy
 Edit
 python manage.py migrate
-Run the development server:
+Run the Server
 
 bash
 Copy
 Edit
 python manage.py runserver
-Access the application:
+Open your browser at:
+👉 http://localhost:8000
 
-Open your browser and navigate to http://localhost:8000.
+💼 Usage
+Navigate to the homepage.
 
-Usage
-Navigate to the application's homepage.
+Enter payment details.
 
-Enter the required payment details.
+Submit the form to initiate an STK Push request to the provided phone number.
 
-Submit the form to initiate an M-Pesa STK Push to the provided phone number.
+🤝 Contributing
+Contributions are welcome!
+To contribute:
 
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+Fork this repository.
+
+Create a new branch: git checkout -b feature-name
+
+Commit your changes: git commit -m 'Add new feature'
+
+Push to the branch: git push origin feature-name
+
+Submit a pull request.
+
+📄 License
+This project is open-source under the MIT License.
+
+sql
+Copy
+Edit
+MIT License
+
+Copyright (c) 2025 Arthur Muriuki
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+and associated documentation files (the "Software"), to deal in the Software without restriction, 
+including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or 
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT 
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH 
+THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Thank you for using M-Pesa Prompt Integration! 💚
