@@ -1,1 +1,67 @@
+💸 M-Pesa Prompt Integration
+License: MIT Built with Django Database: SQLite
 
+This repository contains a Django-based web application that integrates with the M-Pesa API to initiate payment prompts via STK Push.
+
+🚀 Features
+📲 STK Push Integration – Sends payment prompts directly to users' mobile devices via M-Pesa.
+🧱 Django Framework – Rapid backend development with a clean structure.
+🗃 SQLite Database – Lightweight local database for transactions.
+🗂️ Project Structure
+mpesa-prompt/ │ ├── mpesademo/ # Django project configuration ├── myapp/ # Core logic for M-Pesa integration ├── db.sqlite3 # SQLite database ├── manage.py # Django management utility ├── .env # Environment variables (not tracked in Git) └── requirements.txt # Python dependencies
+
+⚙️ Technologies Used
+Python – Backend language
+Django – Web framework
+SQLite – Development database
+🧪 Getting Started
+✅ Prerequisites
+Python 3.x installed
+Optional: Virtual environment tool
+🔧 Installation
+Clone the Repository
+git clone https://github.com/Arthur-Muriuki/mpesa-prompt.git
+cd mpesa-prompt
+Create and Activate a Virtual Environment (Optional)
+
+macOS/Linux: bash Copy Edit python -m venv venv source venv/bin/activate Windows: bash Copy Edit python -m venv venv venv\Scripts\activate Install Dependencies
+
+bash Copy Edit pip install -r requirements.txt Configure Environment Variables
+
+Create a .env file in the root directory and add:
+
+env Copy Edit CONSUMER_KEY=your_consumer_key CONSUMER_SECRET=your_consumer_secret SHORTCODE=your_shortcode PASSKEY=your_passkey Apply Migrations
+
+bash Copy Edit python manage.py migrate Run the Server
+
+bash Copy Edit python manage.py runserver Open your browser at: 👉 http://localhost:8000
+
+💼 Usage Navigate to the homepage.
+
+Enter payment details.
+
+Submit the form to initiate an STK Push request to the provided phone number.
+
+🤝 Contributing Contributions are welcome! To contribute:
+
+Fork this repository.
+
+Create a new branch: git checkout -b feature-name
+
+Commit your changes: git commit -m 'Add new feature'
+
+Push to the branch: git push origin feature-name
+
+Submit a pull request.
+
+📄 License This project is open-source under the MIT License.
+
+sql Copy Edit MIT License
+
+Copyright (c) 2025 Arthur Muriuki
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Thank you for using M-Pesa Prompt Integration! 💚
